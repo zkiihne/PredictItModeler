@@ -6,17 +6,11 @@ import statistics
 import scipy.stats
 from twython import Twython, TwythonError
 
-APP_KEY="wR3xsZNmLI5MCAbuUAEoz1Qjf"
-APP_SECRET="o0qr3MHELhuWF5DMsk0ORN0ofo67vFEslxpVzCDK5GJZx0kHk5"
-OAUTH_TOKEN="4228193944-b0dmWlAN8A8PGYDYM2IgJ3ALC9DnM2ygYaGH7Zu"
-OAUTH_TOKEN_SECRET="km64o5jvZV4Ue4vV3dSZu7WbzWdkqnIRh6Uq9bXq4C0I1"
+
+
+
 initial = 44
 name = "VP"
-
-# google
-CLIENT_ID = "850048541198-1e6fk3vto3976hh13sr8ov0ida3cd84i.apps.googleusercontent.com"
-CLIENT_SECERET = "cE0Jef6hoGyr8EFg7kBBkswF"
-
 def write_trade_to_csv(time, curr_count, buy, qty, position, market_name, cost):
     buy_arr = [0,0,0,0,0,0,0]
     sell_arr = [0, 0, 0, 0, 0, 0, 0]
